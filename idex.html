@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Calculando nota</h1>
+        <div class="num1">
+            <input type="number" id="primeiro" placeholder="Insira a primeira nota">
+        
+        </div>
+        <div class="num2">
+            <input type="number" id="segundo" placeholder="Insira a segunda nota">
+        </div>
+        <div class="cal"><button onclick="calculando()">Calcular</button></div>
+        <div class="clear"><button onclick="limpar()">Limpar</button></div>
+        <h2>Resultado:</h2>
+        <div class="resposta"><input id="display" readonly></div>
+
+
+    <script>
+        let one, two, media;
+        const display = document.getElementById("display");
+        
+        
+        /* Constante para a função limpar */
+        const limparFirst  = document.getElementById("primeiro");
+        const limparSecond = document.getElementById("segundo");
+
+
+
+        function calculando(){
+           
+        one   = parseFloat(document.getElementById("primeiro").value);
+        two   = parseFloat(document.getElementById("segundo").value);
+        media = (one + two) / 2;
+
+            if(media >= 6 && media <= 10){
+                display.value = "Aprovado";
+            }
+
+            else if(media >= 0 && media <= 5.9){
+                display.value = `Reprovado!`;
+            }
+
+            else{
+                display.value = "Nota invalida";
+            }
+        }
+
+        function limpar(){
+            limparFirst.value = "";
+            limparSecond.value = "";
+            display.value = "";             
+        }
+    </script>
+
+    <footer>
+        <p>Desenvolvido por <a
+            target="_blank" href="https://github.com/DiegoNoxe">Diego Nascimento</a></p>
+    </footer>
+</body>
+</html>

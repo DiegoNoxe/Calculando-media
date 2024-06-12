@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-image: linear-gradient(to right, #6974F5, #453577);
+}
+
+#display, #primeiro, #segundo{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 136, 255);
+}
+
+h1{
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.resposta{
+    text-align: center;
+}
+
+.num1{
+    text-align: center;
+}
+
+.num2{
+    text-align: center;
+}
+
+.clear, .cal{
+    top: 5.5rem;
+    left: 57rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #000000;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(212, 255, 95);
+    text-decoration: underline;
+}
+
+/* Animações */
+
+
+
